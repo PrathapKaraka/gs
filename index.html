@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>GrowthSchool login page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>GrowthSchool login page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
             <img src="user.png" width="64px" height="64px">
-            <h1>Sign in to GrowthSchool</h1>
-        </header>
-        <div class="loginbox">
-            <label class="login">
-                <p>Username or email address</p>
-                <input type="text">
-            </label>
-            <label class="password">
-                <p>Password <a href="#">Forgot Password?</a></p>
-                <input type="password">
-            </label>
-            <input type="submit" value="Sign in">
-            <div class="new">
-                <p>New to Growth School? <a href="#">Create an account.</a></p>
+        </div>
+        <h3 class="heading">
+            Sign in to GrowthSchool
+        </h3>
+        <div class="login-wrapper">
+            <div class="input-box">
+                <div class="input-label">Username</div>
+                <input type="text" class="input-field">
             </div>
-            <div class="list">
-                <ul>
-                    <li class="m3"><a href="#">Terms</a></li>
-                    <li class="m3"><a href="#">Privacy</a></li>
-                    <li class="m3"><a href="#">Security</a></li>
-                    <li class="m3"><a href="#" class="contact">Contact</a></li>
-                </ul>
+
+            <div class="input-box">
+                <div class="input-label">
+                    <span>Password</span>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <input type="password" class="input-field">
             </div>
-        </div>   
-    </body>
+
+            <button class="submit-btn">
+                Sign in
+            </button>
+        </div>
+
+        <div class="account">
+            <span>New to GitHub? <a href="#">Create an account.</a></span>
+        </div>
+        <div class="footer">
+           <p>Terms</p>
+           <p>Privacy</p>
+           <p>Security</p>
+           <p class="contact">Contact</p>
+           
+        </div>
+        
+    </div>
+   
+</div>   
+</body>
+
 </html>
